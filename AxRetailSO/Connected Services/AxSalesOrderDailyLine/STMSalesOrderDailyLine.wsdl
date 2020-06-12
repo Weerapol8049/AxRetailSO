@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd7" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd8" namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" />
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd10" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" />
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd1" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" />
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd2" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKey" />
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd3" />
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd4" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/QueryCriteria" />
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd5" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/STMSODailyLine" />
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd6" namespace="http://schemas.microsoft.com/dynamics/2008/01/sharedtypes" />
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd9" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd11" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.Framework.Services" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="STMSODailyLineServiceReadRequest">
+    <wsdl:part name="parameters" element="tns:STMSODailyLineServiceReadRequest" />
+  </wsdl:message>
+  <wsdl:message name="STMSODailyLineServiceReadRequest_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="STMSODailyLineServiceReadResponse">
+    <wsdl:part name="parameters" element="tns:STMSODailyLineServiceReadResponse" />
+  </wsdl:message>
+  <wsdl:message name="STMSODailyLineService_read_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q2:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="STMSODailyLineServiceDeleteRequest">
+    <wsdl:part name="parameters" element="tns:STMSODailyLineServiceDeleteRequest" />
+  </wsdl:message>
+  <wsdl:message name="STMSODailyLineServiceDeleteRequest_Headers">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q3:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="STMSODailyLineServiceDeleteResponse">
+    <wsdl:part name="parameters" element="tns:STMSODailyLineServiceDeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="STMSODailyLineService_delete_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q4:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="STMSODailyLineServiceFindRequest">
+    <wsdl:part name="parameters" element="tns:STMSODailyLineServiceFindRequest" />
+  </wsdl:message>
+  <wsdl:message name="STMSODailyLineServiceFindRequest_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q5:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="STMSODailyLineServiceFindResponse">
+    <wsdl:part name="parameters" element="tns:STMSODailyLineServiceFindResponse" />
+  </wsdl:message>
+  <wsdl:message name="STMSODailyLineService_find_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q6:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="STMSODailyLineServiceUpdateRequest">
+    <wsdl:part name="parameters" element="tns:STMSODailyLineServiceUpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="STMSODailyLineServiceUpdateRequest_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="STMSODailyLineServiceUpdateResponse">
+    <wsdl:part name="parameters" element="tns:STMSODailyLineServiceUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="STMSODailyLineService_update_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q8:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="STMSODailyLineServiceCreateRequest">
+    <wsdl:part name="parameters" element="tns:STMSODailyLineServiceCreateRequest" />
+  </wsdl:message>
+  <wsdl:message name="STMSODailyLineServiceCreateRequest_Headers">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q9:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="STMSODailyLineServiceCreateResponse">
+    <wsdl:part name="parameters" element="tns:STMSODailyLineServiceCreateResponse" />
+  </wsdl:message>
+  <wsdl:message name="STMSODailyLineService_create_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q10:AifFault" />
+  </wsdl:message>
+  <wsdl:portType name="STMSODailyLineService">
+    <wsdl:operation name="read">
+      <wsdl:input wsaw:Action="http://tempuri.org/STMSODailyLineService/read" name="STMSODailyLineServiceReadRequest" message="tns:STMSODailyLineServiceReadRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/STMSODailyLineService/readResponse" name="STMSODailyLineServiceReadResponse" message="tns:STMSODailyLineServiceReadResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/STMSODailyLineService/readAifFaultFault" name="AifFaultFault" message="tns:STMSODailyLineService_read_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/STMSODailyLineService/delete" name="STMSODailyLineServiceDeleteRequest" message="tns:STMSODailyLineServiceDeleteRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/STMSODailyLineService/deleteResponse" name="STMSODailyLineServiceDeleteResponse" message="tns:STMSODailyLineServiceDeleteResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/STMSODailyLineService/deleteAifFaultFault" name="AifFaultFault" message="tns:STMSODailyLineService_delete_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="find">
+      <wsdl:input wsaw:Action="http://tempuri.org/STMSODailyLineService/find" name="STMSODailyLineServiceFindRequest" message="tns:STMSODailyLineServiceFindRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/STMSODailyLineService/findResponse" name="STMSODailyLineServiceFindResponse" message="tns:STMSODailyLineServiceFindResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/STMSODailyLineService/findAifFaultFault" name="AifFaultFault" message="tns:STMSODailyLineService_find_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <wsdl:input wsaw:Action="http://tempuri.org/STMSODailyLineService/update" name="STMSODailyLineServiceUpdateRequest" message="tns:STMSODailyLineServiceUpdateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/STMSODailyLineService/updateResponse" name="STMSODailyLineServiceUpdateResponse" message="tns:STMSODailyLineServiceUpdateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/STMSODailyLineService/updateAifFaultFault" name="AifFaultFault" message="tns:STMSODailyLineService_update_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <wsdl:input wsaw:Action="http://tempuri.org/STMSODailyLineService/create" name="STMSODailyLineServiceCreateRequest" message="tns:STMSODailyLineServiceCreateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/STMSODailyLineService/createResponse" name="STMSODailyLineServiceCreateResponse" message="tns:STMSODailyLineServiceCreateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/STMSODailyLineService/createAifFaultFault" name="AifFaultFault" message="tns:STMSODailyLineService_create_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://tempuri.org" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="STMSalesOrderDailyLog" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_AxdSTMSalesSoLogService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://tempuri.org" location="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLog?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="NetTcpBinding_AxdSTMSalesSoLogService" type="i0:AxdSTMSalesSoLogService">
+    <wsp:PolicyReference URI="#NetTcpBinding_AxdSTMSalesSoLogService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="find">
+      <soap12:operation soapAction="http://tempuri.org/AxdSTMSalesSoLogService/find" style="document" />
+      <wsdl:input name="AxdSTMSalesSoLogServiceFindRequest">
+        <soap12:header message="i0:AxdSTMSalesSoLogServiceFindRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AxdSTMSalesSoLogServiceFindResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="read">
+      <soap12:operation soapAction="http://tempuri.org/AxdSTMSalesSoLogService/read" style="document" />
+      <wsdl:input name="AxdSTMSalesSoLogServiceReadRequest">
+        <soap12:header message="i0:AxdSTMSalesSoLogServiceReadRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AxdSTMSalesSoLogServiceReadResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <soap12:operation soapAction="http://tempuri.org/AxdSTMSalesSoLogService/create" style="document" />
+      <wsdl:input name="AxdSTMSalesSoLogServiceCreateRequest">
+        <soap12:header message="i0:AxdSTMSalesSoLogServiceCreateRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AxdSTMSalesSoLogServiceCreateResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="STMSalesOrderDailyLog">
+    <wsdl:port name="NetTcpBinding_AxdSTMSalesSoLogService" binding="tns:NetTcpBinding_AxdSTMSalesSoLogService">
+      <soap12:address location="net.tcp://aoslive:8201/DynamicsAx/Services/STMSalesOrderDailyLog" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://aoslive:8201/DynamicsAx/Services/STMSalesOrderDailyLog</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>adminax@STMM.LOCAL</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

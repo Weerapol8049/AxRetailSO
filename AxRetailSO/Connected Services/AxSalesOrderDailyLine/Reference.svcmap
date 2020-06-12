@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="64ccffe9-2edb-455c-95c2-fc75c8234e16" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://AOSLIVE:8101/DynamicsAx/Services/STMSalesOrderDailyLine" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="STMSalesOrderDailyLine.xsd" MetadataType="Schema" ID="9135a36c-e1bc-484d-a41f-918290bd38cb" SourceId="1" SourceUrl="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd5" />
+    <MetadataFile FileName="STMSalesOrderDailyLine1.xsd" MetadataType="Schema" ID="c2da6be5-8cac-42b4-97a4-5f798513a519" SourceId="1" SourceUrl="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd3" />
+    <MetadataFile FileName="STMSalesOrderDailyLine.wsdl" MetadataType="Wsdl" ID="2f095007-8de1-43f0-9d78-69e1857fac7e" SourceId="1" SourceUrl="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?wsdl=wsdl0" />
+    <MetadataFile FileName="STMSalesOrderDailyLine2.xsd" MetadataType="Schema" ID="47a0de78-6ed0-47ef-81ca-e31c97d3537d" SourceId="1" SourceUrl="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd9" />
+    <MetadataFile FileName="STMSalesOrderDailyLine3.xsd" MetadataType="Schema" ID="1fe59976-1322-446f-969f-00518b04f24a" SourceId="1" SourceUrl="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd10" />
+    <MetadataFile FileName="STMSalesOrderDailyLine4.xsd" MetadataType="Schema" ID="f1a98ba5-3ca0-4ab6-8f0c-2f69e40b4b3c" SourceId="1" SourceUrl="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd6" />
+    <MetadataFile FileName="STMSalesOrderDailyLine5.xsd" MetadataType="Schema" ID="c4151102-bf35-4ba4-bb5f-63013696e8cb" SourceId="1" SourceUrl="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd4" />
+    <MetadataFile FileName="STMSalesOrderDailyLine6.xsd" MetadataType="Schema" ID="486efadf-97d5-4b16-bc3d-a77dfacbaf50" SourceId="1" SourceUrl="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd11" />
+    <MetadataFile FileName="STMSalesOrderDailyLine7.xsd" MetadataType="Schema" ID="ed2bdcc3-de2f-4521-8609-2851401fd8d1" SourceId="1" SourceUrl="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd8" />
+    <MetadataFile FileName="STMSalesOrderDailyLine1.wsdl" MetadataType="Wsdl" ID="cef81045-7e4b-4ec5-b3fe-474fec0f4136" SourceId="1" SourceUrl="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine" />
+    <MetadataFile FileName="STMSalesOrderDailyLine8.xsd" MetadataType="Schema" ID="67468055-9ff5-4381-a74a-3b9751e1909b" SourceId="1" SourceUrl="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd1" />
+    <MetadataFile FileName="STMSalesOrderDailyLine9.xsd" MetadataType="Schema" ID="8a584087-e3fb-4880-821d-13a5dfd6f80d" SourceId="1" SourceUrl="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd7" />
+    <MetadataFile FileName="STMSalesOrderDailyLine10.xsd" MetadataType="Schema" ID="8210fd96-64f6-4898-bc67-434bae6e970c" SourceId="1" SourceUrl="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd2" />
+    <MetadataFile FileName="STMSalesOrderDailyLine11.xsd" MetadataType="Schema" ID="62a1a2c1-302e-4b8d-8298-4e813f4e7a9b" SourceId="1" SourceUrl="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

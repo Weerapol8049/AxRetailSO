@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLog?xsd=xsd7" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLog?xsd=xsd8" namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" />
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLog?xsd=xsd10" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" />
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLog?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLog?xsd=xsd1" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" />
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLog?xsd=xsd2" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKey" />
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLog?xsd=xsd3" />
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLog?xsd=xsd4" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/QueryCriteria" />
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLog?xsd=xsd5" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/AxdSTMSalesSoLog" />
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLog?xsd=xsd6" namespace="http://schemas.microsoft.com/dynamics/2008/01/sharedtypes" />
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLog?xsd=xsd9" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLog?xsd=xsd11" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.Framework.Services" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="AxdSTMSalesSoLogServiceFindRequest">
+    <wsdl:part name="parameters" element="tns:AxdSTMSalesSoLogServiceFindRequest" />
+  </wsdl:message>
+  <wsdl:message name="AxdSTMSalesSoLogServiceFindRequest_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AxdSTMSalesSoLogServiceFindResponse">
+    <wsdl:part name="parameters" element="tns:AxdSTMSalesSoLogServiceFindResponse" />
+  </wsdl:message>
+  <wsdl:message name="AxdSTMSalesSoLogService_find_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q2:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AxdSTMSalesSoLogServiceReadRequest">
+    <wsdl:part name="parameters" element="tns:AxdSTMSalesSoLogServiceReadRequest" />
+  </wsdl:message>
+  <wsdl:message name="AxdSTMSalesSoLogServiceReadRequest_Headers">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q3:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AxdSTMSalesSoLogServiceReadResponse">
+    <wsdl:part name="parameters" element="tns:AxdSTMSalesSoLogServiceReadResponse" />
+  </wsdl:message>
+  <wsdl:message name="AxdSTMSalesSoLogService_read_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q4:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AxdSTMSalesSoLogServiceCreateRequest">
+    <wsdl:part name="parameters" element="tns:AxdSTMSalesSoLogServiceCreateRequest" />
+  </wsdl:message>
+  <wsdl:message name="AxdSTMSalesSoLogServiceCreateRequest_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q5:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AxdSTMSalesSoLogServiceCreateResponse">
+    <wsdl:part name="parameters" element="tns:AxdSTMSalesSoLogServiceCreateResponse" />
+  </wsdl:message>
+  <wsdl:message name="AxdSTMSalesSoLogService_create_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q6:AifFault" />
+  </wsdl:message>
+  <wsdl:portType name="AxdSTMSalesSoLogService">
+    <wsdl:operation name="find">
+      <wsdl:input wsaw:Action="http://tempuri.org/AxdSTMSalesSoLogService/find" name="AxdSTMSalesSoLogServiceFindRequest" message="tns:AxdSTMSalesSoLogServiceFindRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/AxdSTMSalesSoLogService/findResponse" name="AxdSTMSalesSoLogServiceFindResponse" message="tns:AxdSTMSalesSoLogServiceFindResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/AxdSTMSalesSoLogService/findAifFaultFault" name="AifFaultFault" message="tns:AxdSTMSalesSoLogService_find_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="read">
+      <wsdl:input wsaw:Action="http://tempuri.org/AxdSTMSalesSoLogService/read" name="AxdSTMSalesSoLogServiceReadRequest" message="tns:AxdSTMSalesSoLogServiceReadRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/AxdSTMSalesSoLogService/readResponse" name="AxdSTMSalesSoLogServiceReadResponse" message="tns:AxdSTMSalesSoLogServiceReadResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/AxdSTMSalesSoLogService/readAifFaultFault" name="AifFaultFault" message="tns:AxdSTMSalesSoLogService_read_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <wsdl:input wsaw:Action="http://tempuri.org/AxdSTMSalesSoLogService/create" name="AxdSTMSalesSoLogServiceCreateRequest" message="tns:AxdSTMSalesSoLogServiceCreateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/AxdSTMSalesSoLogService/createResponse" name="AxdSTMSalesSoLogServiceCreateResponse" message="tns:AxdSTMSalesSoLogServiceCreateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/AxdSTMSalesSoLogService/createAifFaultFault" name="AifFaultFault" message="tns:AxdSTMSalesSoLogService_create_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

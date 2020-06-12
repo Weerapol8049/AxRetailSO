@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="12acbe44-9f81-42d0-9c8a-6b6b922bbfb0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://AOSUAT:8101/DynamicsAx/Services/STMSalesOrderDailyConfirm" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="STMSalesOrderDailyConfirm.wsdl" MetadataType="Wsdl" ID="6f98ba79-f1b7-4ce6-9aa2-d9328a34e281" SourceId="1" SourceUrl="http://aosuat:8101/DynamicsAx/Services/STMSalesOrderDailyConfirm" />
+    <MetadataFile FileName="STMSalesOrderDailyConfirm.xsd" MetadataType="Schema" ID="dc48fed2-8655-4023-806d-b1c86324b122" SourceId="1" SourceUrl="http://aosuat:8101/DynamicsAx/Services/STMSalesOrderDailyConfirm?xsd=xsd8" />
+    <MetadataFile FileName="STMSalesOrderDailyConfirm1.xsd" MetadataType="Schema" ID="e48e9057-6c7e-4f7c-94e9-282cd5713049" SourceId="1" SourceUrl="http://aosuat:8101/DynamicsAx/Services/STMSalesOrderDailyConfirm?xsd=xsd9" />
+    <MetadataFile FileName="STMSalesOrderDailyConfirm2.xsd" MetadataType="Schema" ID="4594d2b7-b948-49b3-8c01-f9623c74c364" SourceId="1" SourceUrl="http://aosuat:8101/DynamicsAx/Services/STMSalesOrderDailyConfirm?xsd=xsd10" />
+    <MetadataFile FileName="STMSalesOrderDailyConfirm3.xsd" MetadataType="Schema" ID="2f984396-b2c9-44ed-bd20-2c6b0cbe79be" SourceId="1" SourceUrl="http://aosuat:8101/DynamicsAx/Services/STMSalesOrderDailyConfirm?xsd=xsd2" />
+    <MetadataFile FileName="STMSalesOrderDailyConfirm4.xsd" MetadataType="Schema" ID="5c898ede-67b2-49c2-801d-a9724236e9fb" SourceId="1" SourceUrl="http://aosuat:8101/DynamicsAx/Services/STMSalesOrderDailyConfirm?xsd=xsd3" />
+    <MetadataFile FileName="STMSalesOrderDailyConfirm5.xsd" MetadataType="Schema" ID="bfd5e42d-ffb7-44d7-891c-d9851b53639a" SourceId="1" SourceUrl="http://aosuat:8101/DynamicsAx/Services/STMSalesOrderDailyConfirm?xsd=xsd0" />
+    <MetadataFile FileName="STMSalesOrderDailyConfirm6.xsd" MetadataType="Schema" ID="095c1edd-bda5-4e68-9797-b799c87834d8" SourceId="1" SourceUrl="http://aosuat:8101/DynamicsAx/Services/STMSalesOrderDailyConfirm?xsd=xsd1" />
+    <MetadataFile FileName="STMSalesOrderDailyConfirm7.xsd" MetadataType="Schema" ID="a2afe000-8568-46e4-8414-19b292238117" SourceId="1" SourceUrl="http://aosuat:8101/DynamicsAx/Services/STMSalesOrderDailyConfirm?xsd=xsd6" />
+    <MetadataFile FileName="STMSalesOrderDailyConfirm8.xsd" MetadataType="Schema" ID="f09a9128-914f-41c4-bb4f-b0e4af241e59" SourceId="1" SourceUrl="http://aosuat:8101/DynamicsAx/Services/STMSalesOrderDailyConfirm?xsd=xsd7" />
+    <MetadataFile FileName="STMSalesOrderDailyConfirm9.xsd" MetadataType="Schema" ID="178813de-7c30-4315-9000-20b7038bae54" SourceId="1" SourceUrl="http://aosuat:8101/DynamicsAx/Services/STMSalesOrderDailyConfirm?xsd=xsd4" />
+    <MetadataFile FileName="STMSalesOrderDailyConfirm10.xsd" MetadataType="Schema" ID="28e88511-356a-4005-9227-b7f1f3113543" SourceId="1" SourceUrl="http://aosuat:8101/DynamicsAx/Services/STMSalesOrderDailyConfirm?xsd=xsd5" />
+    <MetadataFile FileName="STMSalesOrderDailyConfirm11.xsd" MetadataType="Schema" ID="a179dec7-86a9-42c6-a9ec-30a4f2a639b2" SourceId="1" SourceUrl="http://aosuat:8101/DynamicsAx/Services/STMSalesOrderDailyConfirm?xsd=xsd11" />
+    <MetadataFile FileName="STMSalesOrderDailyConfirm1.wsdl" MetadataType="Wsdl" ID="2ad9c789-1a44-4dc4-b6e4-6c29c7a5f0e4" SourceId="1" SourceUrl="http://aosuat:8101/DynamicsAx/Services/STMSalesOrderDailyConfirm?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

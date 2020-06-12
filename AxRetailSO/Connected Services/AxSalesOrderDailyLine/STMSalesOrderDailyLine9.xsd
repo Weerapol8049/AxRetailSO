@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org" elementFormDefault="qualified" targetNamespace="http://tempuri.org" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd1" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" />
+  <xs:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd5" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/STMSODailyLine" />
+  <xs:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLine?xsd=xsd4" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/QueryCriteria" />
+  <xs:element name="STMSODailyLineServiceReadRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" minOccurs="0" ref="q1:EntityKeyList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="STMSODailyLineServiceReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.microsoft.com/dynamics/2008/01/documents/STMSODailyLine" minOccurs="0" ref="q2:STMSODailyLine" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="STMSODailyLineServiceDeleteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" minOccurs="0" ref="q3:EntityKeyList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="STMSODailyLineServiceDeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="STMSODailyLineServiceFindRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.microsoft.com/dynamics/2006/02/documents/QueryCriteria" minOccurs="0" ref="q4:QueryCriteria" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="STMSODailyLineServiceFindResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.microsoft.com/dynamics/2008/01/documents/STMSODailyLine" minOccurs="0" ref="q5:STMSODailyLine" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="STMSODailyLineServiceUpdateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" minOccurs="0" ref="q6:EntityKeyList" />
+        <xs:element xmlns:q7="http://schemas.microsoft.com/dynamics/2008/01/documents/STMSODailyLine" minOccurs="0" ref="q7:STMSODailyLine" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="STMSODailyLineServiceUpdateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="STMSODailyLineServiceCreateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.microsoft.com/dynamics/2008/01/documents/STMSODailyLine" minOccurs="0" ref="q8:STMSODailyLine" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="STMSODailyLineServiceCreateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" minOccurs="0" ref="q9:EntityKeyList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

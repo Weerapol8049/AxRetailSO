@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org" elementFormDefault="qualified" targetNamespace="http://tempuri.org" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDaily?xsd=xsd1" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" />
+  <xs:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDaily?xsd=xsd5" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/SalesDaily" />
+  <xs:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDaily?xsd=xsd4" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/QueryCriteria" />
+  <xs:element name="SalesDailyServiceDeleteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" minOccurs="0" ref="q1:EntityKeyList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SalesDailyServiceDeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SalesDailyServiceUpdateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" minOccurs="0" ref="q2:EntityKeyList" />
+        <xs:element xmlns:q3="http://schemas.microsoft.com/dynamics/2008/01/documents/SalesDaily" minOccurs="0" ref="q3:SalesDaily" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SalesDailyServiceUpdateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SalesDailyServiceReadRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" minOccurs="0" ref="q4:EntityKeyList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SalesDailyServiceReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.microsoft.com/dynamics/2008/01/documents/SalesDaily" minOccurs="0" ref="q5:SalesDaily" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SalesDailyServiceCreateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.microsoft.com/dynamics/2008/01/documents/SalesDaily" minOccurs="0" ref="q6:SalesDaily" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SalesDailyServiceCreateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" minOccurs="0" ref="q7:EntityKeyList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SalesDailyServiceFindRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.microsoft.com/dynamics/2006/02/documents/QueryCriteria" minOccurs="0" ref="q8:QueryCriteria" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SalesDailyServiceFindResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.microsoft.com/dynamics/2008/01/documents/SalesDaily" minOccurs="0" ref="q9:SalesDaily" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

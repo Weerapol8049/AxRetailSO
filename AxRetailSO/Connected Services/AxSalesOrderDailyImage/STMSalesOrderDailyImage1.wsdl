@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://tempuri.org" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="STMSalesOrderDailyImage" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_STM_SalesImageService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://tempuri.org" location="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyImage?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="NetTcpBinding_STM_SalesImageService" type="i0:STM_SalesImageService">
+    <wsp:PolicyReference URI="#NetTcpBinding_STM_SalesImageService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="read">
+      <soap12:operation soapAction="http://tempuri.org/STM_SalesImageService/read" style="document" />
+      <wsdl:input name="STM_SalesImageServiceReadRequest">
+        <soap12:header message="i0:STM_SalesImageServiceReadRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="STM_SalesImageServiceReadResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <soap12:operation soapAction="http://tempuri.org/STM_SalesImageService/update" style="document" />
+      <wsdl:input name="STM_SalesImageServiceUpdateRequest">
+        <soap12:header message="i0:STM_SalesImageServiceUpdateRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="STM_SalesImageServiceUpdateResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <soap12:operation soapAction="http://tempuri.org/STM_SalesImageService/delete" style="document" />
+      <wsdl:input name="STM_SalesImageServiceDeleteRequest">
+        <soap12:header message="i0:STM_SalesImageServiceDeleteRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="STM_SalesImageServiceDeleteResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="find">
+      <soap12:operation soapAction="http://tempuri.org/STM_SalesImageService/find" style="document" />
+      <wsdl:input name="STM_SalesImageServiceFindRequest">
+        <soap12:header message="i0:STM_SalesImageServiceFindRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="STM_SalesImageServiceFindResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <soap12:operation soapAction="http://tempuri.org/STM_SalesImageService/create" style="document" />
+      <wsdl:input name="STM_SalesImageServiceCreateRequest">
+        <soap12:header message="i0:STM_SalesImageServiceCreateRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="STM_SalesImageServiceCreateResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="STMSalesOrderDailyImage">
+    <wsdl:port name="NetTcpBinding_STM_SalesImageService" binding="tns:NetTcpBinding_STM_SalesImageService">
+      <soap12:address location="net.tcp://aoslive:8201/DynamicsAx/Services/STMSalesOrderDailyImage" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://aoslive:8201/DynamicsAx/Services/STMSalesOrderDailyImage</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>adminax@STMM.LOCAL</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.microsoft.com/dynamics/2008/01/documents/AxdSTMSalesSoLog" xmlns:st="http://schemas.microsoft.com/dynamics/2008/01/sharedtypes" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/dynamics/2008/01/documents/AxdSTMSalesSoLog" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://aoslive:8101/DynamicsAx/Services/STMSalesOrderDailyLog?xsd=xsd6" namespace="http://schemas.microsoft.com/dynamics/2008/01/sharedtypes" />
+  <xs:element name="AxdSTMSalesSoLog" type="tns:AxdAxdSTMSalesSoLog" />
+  <xs:complexType name="AxdAxdSTMSalesSoLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClearNilFieldsOnUpdate" nillable="true" type="st:AxdEnum_boolean" />
+      <xs:element minOccurs="0" name="DocPurpose" nillable="true" type="st:AxdEnum_XMLDocPurpose" />
+      <xs:element minOccurs="0" name="SenderId" nillable="true" type="st:AxdExtType_DataAreaId" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StmSalesSoLog" type="tns:AxdEntity_StmSalesSoLog" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AxdEntity_StmSalesSoLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="_DocumentHash" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateBy" nillable="true" type="st:AxdUnion_AxdType_Str_AxdType_ExtCodeValue" />
+      <xs:element minOccurs="0" name="ModifyBy" nillable="true" type="st:AxdUnion_AxdType_Str_AxdType_ExtCodeValue" />
+      <xs:element minOccurs="0" name="RecId" nillable="true" type="st:AxdExtType_RecId" />
+      <xs:element minOccurs="0" name="RecVersion" nillable="true" type="st:AxdExtType_RecVersion" />
+      <xs:element minOccurs="0" name="RefRecId" nillable="true" type="st:AxdExtType_RefRecId" />
+    </xs:sequence>
+    <xs:attribute fixed="entity" name="class" use="required" />
+    <xs:attribute name="action" type="st:AxdEnum_AxdEntityAction" />
+  </xs:complexType>
+</xs:schema>
